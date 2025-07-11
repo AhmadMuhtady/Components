@@ -25,3 +25,33 @@ body {
 	width: 700px;
 	margin: 100px auto;
 }
+
+.item {
+}
+.number,
+.text {
+	font-size: 24px;
+	font-weight: 500px;
+	color: ;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	stroke: #087f5b;
+}
+.hidden-box {
+}
+
+.hidden-box p {
+	line-height: 1.6;
+	margin-bottom: 24px;
+}
+
+.hidden-box ul {
+	color: #868e96;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
