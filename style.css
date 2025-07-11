@@ -19,6 +19,7 @@ text colors: #343a40
 body {
 	font-family: 'Inter', sans-serif;
 	color: #343a40;
+	line-height: 1;
 }
 
 .accordion {
@@ -32,7 +33,7 @@ body {
 .text {
 	font-size: 24px;
 	font-weight: 500px;
-	color: ;
+	color: #087f5b;
 }
 
 .icon {
@@ -53,5 +54,5 @@ body {
 	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 12px;
 }
