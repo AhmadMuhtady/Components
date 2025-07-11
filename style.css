@@ -25,6 +25,9 @@ body {
 .accordion {
 	width: 700px;
 	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .item {
@@ -49,9 +52,12 @@ body {
 	stroke: #087f5b;
 }
 .hidden-box {
-	grid-column: 2;
+	display: none;
 }
 
+.box {
+	grid-column: 2;
+}
 .hidden-box p {
 	line-height: 1.6;
 	margin-bottom: 24px;
