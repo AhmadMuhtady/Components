@@ -8,8 +8,8 @@ FONT SIZE SYSTEM (px)
 
 /* main color : #087f5b
 text colors: #343a40
-
 */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -38,35 +38,67 @@ body {
 	column-gap: 20px;
 	row-gap: 32px;
 	align-items: center;
+	border-top: 4px solid transparent;
+	transition: border 0.3s;
 }
+
+.item.open {
+	border-top: 4px solid #087f5b;
+}
+
+.item.open .number {
+	color: #087f5b;
+}
+
 .number,
 .text {
 	font-size: 24px;
-	font-weight: 500px;
-	color: #087f5b;
+	font-weight: 500;
+}
+
+.number {
+	color: #ced4da;
 }
 
 .icon {
 	width: 24px;
 	height: 24px;
 	stroke: #087f5b;
+	transition: transform 0.3s ease;
 }
-.hidden-box {
+
+.item.open .icon {
+	transform: rotate(180deg);
+}
+
+.hidden {
 	display: none;
 }
 
 .box {
 	grid-column: 2;
+	transition: all 0.3s ease;
 }
-.hidden-box p {
+
+.box p {
 	line-height: 1.6;
 	margin-bottom: 24px;
 }
 
-.hidden-box ul {
+.box ul {
 	color: #868e96;
 	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+}
+
+.btn {
+	cursor: pointer;
+	border: 0;
+	background-color: #fff;
+}
+
+.btn:focus {
+	outline: none;
 }
